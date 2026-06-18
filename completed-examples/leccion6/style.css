@@ -1,0 +1,83 @@
+﻿header
+{
+    background-color:white;
+    padding: 20px 50px;
+    box-shadow:  0 2px 5px black;
+
+
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul{
+
+    list-style: none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color: #333333 ;
+    font-weight:bold;
+    transition: color 0.3s ease;
+
+}
+
+.logo{
+    color:#ff6b6b;
+
+}
+
+nav a:hover{
+
+    color:#ff6b6b;
+}
+
+/*Estilos para las seccion Hero*/
+.hero
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text{
+
+    max-width: 50%
+}
+
+.hero-text h1{
+
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.destacado{
+
+    color: #ff6b6b;
+}
+
+.boton {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    padding: 15px 25px;
+}
+
+.boton:hover{
+
+    background-color: #e05555;
+    transform: scale(1.05)
+}
+.hero-imagen img{
+
+    width:100%;
+    max-width: 350px;
+    border-radius: 50%;
+    border:5px solid  #ff6b6b;
+}
+

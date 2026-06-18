@@ -1,0 +1,38 @@
+﻿header
+{
+    background-color:white;
+    padding: 20px 50px;
+    box-shadow:  0 2px 5px black;
+
+
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul{
+
+    list-style: none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color: #333333 ;
+    font-weight:bold;
+    transition: color 0.3s ease;
+
+}
+.logo{
+    color:#ff6b6b;
+
+}
+
+nav a:hover{
+
+    color:#ff6b6b;
+}
