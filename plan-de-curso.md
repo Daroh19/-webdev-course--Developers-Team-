@@ -73,7 +73,7 @@ Este curso de 1 hora introduce a estudiantes de secundaria a la creación de sit
 
 
 ## Recursos Adicionales
-- **Código Fuente Completo**: [Repositorio de GitHub](https://github.com/yourusername/webdev-course-teamname) 
+- **Código Fuente Completo**: [Repositorio de GitHub](https://github.com/Daroh19/-webdev-course--Developers-Team-) 
 - **Todas las Actividades Prácticas**:
 
 
