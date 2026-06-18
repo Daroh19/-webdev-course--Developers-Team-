@@ -1,0 +1,215 @@
+﻿/* ===============================
+   ESTILOS GENERALES (BASE)
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Un color gris muy suave de fondo */
+    color: #333333;
+}
+
+/* ===============================
+   EL MENÚ DE NAVEGACIÓN
+   =============================== */
+header {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6b6b; /* Naranja/Rojo bonito */
+}
+
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    text-decoration: none; /* Quita la línea debajo de los enlaces */
+    color: #333333;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+nav a:hover {
+    color: #ff6b6b; /* Cambia de color al pasar el mouse */
+}
+
+/* ===============================
+   SECCIÓN DE PRESENTACIÓN (HERO)
+   =============================== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: #2b2d42; /* Fondo azul oscuro */
+    color: white;
+}
+
+.hero-texto {
+    max-width: 50%;
+}
+
+.hero-texto h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.destacado {
+    color: #ff6b6b;
+}
+
+.hero-texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.boton {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Transición para efecto */
+    display: inline-block;
+}
+
+.boton:hover {
+    background-color: #e05555;
+    transform: scale(1.05); /* El botón crece un poquito */
+}
+
+.hero-imagen img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%; /* Hace la imagen un círculo perfecto */
+    border: 5px solid #ff6b6b;
+}
+
+/* ===============================
+   SECCIÓN DE HOBBIES
+   =============================== */
+.seccion-hobbies {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.seccion-hobbies h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2b2d42;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tarjeta-hobby {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra elegante */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* ¡EFECTO INTERACTIVO IMPORTANTE! */
+.tarjeta-hobby:hover {
+    transform: translateY(-10px); /* La tarjeta salta hacia arriba */
+}
+
+.tarjeta-hobby img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-hobby h3 {
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+
+.tarjeta-hobby ul {
+    text-align: left;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* ===============================
+   PIE DE PÁGINA
+   =============================== */
+footer {
+    background-color: #2b2d42;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ===============================
+   SECCIÓN DE CONTACTO
+   =============================== */
+.seccion-contacto {
+    padding: 60px 10%;
+    background-color: #ffffff; /* Fondo blanco para que resalte del gris */
+    text-align: center;
+}
+
+.seccion-contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2b2d42;
+}
+
+/* El contenedor del formulario */
+form {
+    max-width: 500px; /* Evita que las cajas se estiren por toda la pantalla */
+    margin: 0 auto; /* El truco mágico para centrar el formulario */
+    display: flex;
+    flex-direction: column; /* Pone una caja debajo de la otra */
+    gap: 15px; /* Espacio perfecto entre cada caja */
+}
+
+/* Estilo para las cajas de texto */
+input, textarea {
+    padding: 15px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    font-family: inherit; /* Copia el tipo de letra del resto de la página */
+    font-size: 1rem;
+    transition: border-color 0.3s; /* Transición suave */
+}
+
+/* Hacemos que la caja de mensaje sea más grande */
+textarea {
+    min-height: 150px;
+    resize: vertical; /* Solo permite estirar la caja hacia abajo */
+}
+
+/* ¡Efecto interactivo! Cuando el usuario hace clic para escribir */
+input:focus, textarea:focus {
+    border-color: #ff6b6b; /* El borde se pinta del color principal (naranja/rojo) */
+    outline: none; /* Quita el borde azul feo que ponen los navegadores por defecto */
+}
+
+/* Nota: El botón de "Enviar" usará la misma clase ".boton" que ya creamos para el Hero, 
+   así que automáticamente tendrá el mismo color y efecto de hover. */
