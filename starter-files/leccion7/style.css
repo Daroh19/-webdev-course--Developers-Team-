@@ -1,0 +1,104 @@
+﻿/* ===============================
+   ESTILOS GENERALES (BASE)
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Un color gris muy suave de fondo */
+    color: #333333;
+}
+
+/* ===============================
+   EL MENÚ DE NAVEGACIÓN
+   =============================== */
+header {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6b6b; /* Naranja/Rojo bonito */
+}
+
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    text-decoration: none; /* Quita la línea debajo de los enlaces */
+    color: #333333;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+nav a:hover {
+    color: #ff6b6b; /* Cambia de color al pasar el mouse */
+}
+
+/* ===============================
+   SECCIÓN DE PRESENTACIÓN (HERO)
+   =============================== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: #2b2d42; /* Fondo azul oscuro */
+    color: white;
+}
+
+.hero-texto {
+    max-width: 50%;
+}
+
+.hero-texto h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.destacado {
+    color: #ff6b6b;
+}
+
+.hero-texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.boton {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Transición para efecto */
+    display: inline-block;
+}
+
+.boton:hover {
+    background-color: #e05555;
+    transform: scale(1.05); /* El botón crece un poquito */
+}
+
+.hero-imagen img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%; /* Hace la imagen un círculo perfecto */
+    border: 5px solid #ff6b6b;
+}
